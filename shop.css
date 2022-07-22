@@ -1,0 +1,83 @@
+.ms{
+    width: 20vw;
+    height: 18vw;
+}
+.cards{
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards div{
+    border: 1px solid grey;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;  
+    padding-bottom: 15px;
+}
+.cards button {
+    align-self: center;
+    width: 80%;
+    height: 55px;
+    font-size: 15px;
+    border: 1pX solid  silver;
+    border-radius: 5px;
+}
+.cards div h1, span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.endheader{
+    display: flex;
+}
+.cards div h1{
+    color: rgb(6, 154, 190);
+    font-size: 20px;
+}
+body{
+    justify-content: flex-start;
+    gap: 100px;
+}
+#dropdown{
+    width: 220px;
+    height: 250px;
+    border: 1px solid grey;
+    background-color: rgba(1,64,65,1);
+    position: absolute;
+    right: 53px;
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        gap: 11px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        padding-right: 58px;
+    }
+    .cards {
+        display: flex;
+        gap: 2vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
+    }
+    .ktiba {
+        height: 95px;
+        width: 130px;
+        padding-left: 95px;
+    }
+}
